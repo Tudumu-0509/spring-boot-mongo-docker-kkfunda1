@@ -31,7 +31,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/tmp/mongodata"
+    path: "/tmp/mongodata-ganesha"
 
 ---
 
