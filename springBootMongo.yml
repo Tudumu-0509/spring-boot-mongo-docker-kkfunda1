@@ -23,7 +23,7 @@ stringData:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-hostpath
+  name: pv-host
 spec:
   storageClassName: manual
   capacity:
@@ -38,7 +38,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-hostpath
+  name: pvc-host
   namespace: ganesha
 spec:
   storageClassName: manual
@@ -120,7 +120,7 @@ spec:
       volumes:
         - name: mongodb-pvc
           persistentVolumeClaim:
-            claimName: pvc-hostpath
+            claimName: pvc-host
       containers:
         - name: mongodbcontainer
           image: mongo
