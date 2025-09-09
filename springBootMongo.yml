@@ -23,7 +23,7 @@ stringData:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-host-ganesh
+  name: pv-host
 spec:
   storageClassName: manual
   capacity:
@@ -31,7 +31,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/tmp/mongodata-ganesh"
+    path: "/tmp/mongodata"
 
 ---
 
@@ -120,7 +120,7 @@ spec:
       volumes:
         - name: mongodb-pvc
           persistentVolumeClaim:
-            claimName: pvc-host-ganesha
+            claimName: pvc-host
       containers:
         - name: mongodbcontainer
           image: mongo
