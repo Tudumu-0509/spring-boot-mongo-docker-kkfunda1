@@ -5,7 +5,7 @@ metadata:
   namespace: blessy
 data:
   username: springapp
-  password: mongodb@123
+  password: mongodb@120
 
 ---
 
@@ -16,7 +16,7 @@ metadata:
   namespace: blessy
 type: Opaque
 stringData:
-  password: devdb@123
+  password: devdb@120
 
 ---
 
