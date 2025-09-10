@@ -68,7 +68,7 @@ spec:
     spec:
       containers:
         - name: springappcontainer
-          image: ganeshtudumu/manesha:1.0.0
+          image: ganeshtudumu/manesha:2.0.0
           ports:
             - containerPort: 8080
           env:
